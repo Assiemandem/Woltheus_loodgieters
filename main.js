@@ -78,7 +78,12 @@ if (hamburger && mainNav) {
   });
 
   mainNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+      if (link.classList.contains('nav-link-diensten') && window.innerWidth <= 900) {
+        e.preventDefault();
+        link.closest('.nav-item-dropdown').classList.toggle('is-open');
+        return;
+      }
       mainNav.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
