@@ -3,73 +3,85 @@
    ============================================================ */
 :root {
   /* Brand colours */
-  --color-brand:          hsl(210, 65%, 28%);   /* deep navy-blue */
-  --color-brand-hover:    hsl(210, 65%, 22%);
-  --color-accent:         hsl(198, 72%, 44%);   /* vibrant teal-blue */
-  --color-accent-hover:   hsl(198, 72%, 36%);
+  --color-brand: hsl(210, 65%, 28%);
+  /* deep navy-blue */
+  --color-brand-hover: hsl(210, 65%, 22%);
+  --color-accent: hsl(198, 72%, 44%);
+  /* vibrant teal-blue */
+  --color-accent-hover: hsl(198, 72%, 36%);
 
   /* Surface colours */
-  --color-bg:             hsl(0, 0%, 100%);
-  --color-bg-muted:       hsl(210, 20%, 97%);
-  --color-bg-dark:        hsl(215, 35%, 10%);
-  --color-bg-dark-card:   hsl(215, 30%, 14%);
+  --color-bg: hsl(0, 0%, 100%);
+  --color-bg-muted: hsl(210, 20%, 97%);
+  --color-bg-dark: hsl(215, 35%, 10%);
+  --color-bg-dark-card: hsl(215, 30%, 14%);
 
   /* Text colours */
-  --color-text:           hsl(215, 20%, 12%);
-  --color-text-muted:     hsl(215, 12%, 45%);
-  --color-text-light:     hsl(210, 20%, 88%);
-  --color-text-on-dark:   hsl(0, 0%, 100%);
+  --color-text: hsl(215, 20%, 12%);
+  --color-text-muted: hsl(215, 12%, 45%);
+  --color-text-light: hsl(210, 20%, 88%);
+  --color-text-on-dark: hsl(0, 0%, 100%);
 
   /* Utility */
-  --color-border:         hsl(210, 15%, 90%);
-  --color-border-dark:    hsl(215, 20%, 20%);
-  --color-success:        hsl(150, 60%, 40%);
-  --color-warning:        hsl(40, 90%, 50%);
-  --color-error:          hsl(0, 72%, 50%);
+  --color-border: hsl(210, 15%, 90%);
+  --color-border-dark: hsl(215, 20%, 20%);
+  --color-success: hsl(150, 60%, 40%);
+  --color-warning: hsl(40, 90%, 50%);
+  --color-error: hsl(0, 72%, 50%);
 
   /* Spacing (8px grid) */
-  --space-1:  8px;
-  --space-2:  16px;
-  --space-3:  24px;
-  --space-4:  32px;
-  --space-5:  40px;
-  --space-6:  48px;
-  --space-7:  56px;
-  --space-8:  64px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-7: 56px;
+  --space-8: 64px;
   --space-10: 80px;
   --space-12: 96px;
   --space-16: 128px;
 
   /* Typography */
   --font-body: 'Host Grotesk', system-ui, -apple-system, sans-serif;
-  --font-size-xs:   0.75rem;   /* 12px */
-  --font-size-sm:   0.875rem;  /* 14px */
-  --font-size-base: 1rem;      /* 16px */
-  --font-size-md:   1.125rem;  /* 18px */
-  --font-size-lg:   1.25rem;   /* 20px */
-  --font-size-xl:   1.5rem;    /* 24px */
-  --font-size-2xl:  2rem;      /* 32px */
-  --font-size-3xl:  2.5rem;    /* 40px */
-  --font-size-4xl:  3.25rem;   /* 52px */
-  --font-size-5xl:  4.5rem;    /* 72px */
+  --font-size-xs: 0.75rem;
+  /* 12px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-md: 1.125rem;
+  /* 18px */
+  --font-size-lg: 1.25rem;
+  /* 20px */
+  --font-size-xl: 1.5rem;
+  /* 24px */
+  --font-size-2xl: 2rem;
+  /* 32px */
+  --font-size-3xl: 2.5rem;
+  /* 40px */
+  --font-size-4xl: 3.25rem;
+  /* 52px */
+  --font-size-5xl: 4.5rem;
+  /* 72px */
 
   /* Radii */
-  --radius-sm:  6px;
-  --radius-md:  12px;
-  --radius-lg:  20px;
-  --radius-xl:  32px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm:  0 1px 3px hsla(215, 30%, 10%, 0.08), 0 1px 2px hsla(215, 30%, 10%, 0.06);
-  --shadow-md:  0 4px 16px hsla(215, 30%, 10%, 0.10), 0 2px 6px hsla(215, 30%, 10%, 0.06);
-  --shadow-lg:  0 8px 32px hsla(215, 30%, 10%, 0.14), 0 4px 12px hsla(215, 30%, 10%, 0.08);
-  --shadow-xl:  0 20px 60px hsla(215, 30%, 10%, 0.18);
+  --shadow-sm: 0 1px 3px hsla(215, 30%, 10%, 0.08), 0 1px 2px hsla(215, 30%, 10%, 0.06);
+  --shadow-md: 0 4px 16px hsla(215, 30%, 10%, 0.10), 0 2px 6px hsla(215, 30%, 10%, 0.06);
+  --shadow-lg: 0 8px 32px hsla(215, 30%, 10%, 0.14), 0 4px 12px hsla(215, 30%, 10%, 0.08);
+  --shadow-xl: 0 20px 60px hsla(215, 30%, 10%, 0.18);
 
   /* Transitions */
-  --transition-fast:   150ms ease;
-  --transition-base:   250ms ease;
-  --transition-slow:   400ms ease;
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
 
   /* Layout */
   --max-width: 1200px;
@@ -80,6 +92,7 @@
    REDUCED MOTION
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -93,7 +106,9 @@
 /* ============================================================
    CSS RESET & BASE
    ============================================================ */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -113,22 +128,31 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   line-height: 1.15;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-p { margin: 0; }
+p {
+  margin: 0;
+}
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   display: block;
 }
@@ -138,7 +162,9 @@ a {
   text-decoration: none;
 }
 
-address { font-style: normal; }
+address {
+  font-style: normal;
+}
 
 button {
   cursor: pointer;
@@ -147,7 +173,9 @@ button {
   font-family: inherit;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
 }
@@ -227,9 +255,9 @@ input, textarea, select {
   font-size: var(--font-size-base);
   line-height: 1;
   transition: background-color var(--transition-fast),
-              color var(--transition-fast),
-              transform var(--transition-fast),
-              box-shadow var(--transition-fast);
+    color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -238,6 +266,7 @@ input, textarea, select {
   .btn:hover {
     transform: translateY(-1px);
   }
+
   .btn:active {
     transform: translateY(0);
   }
@@ -290,8 +319,8 @@ input, textarea, select {
   background-color: transparent;
   /* Animate hide/show + background colour change */
   transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1),
-              background-color var(--transition-slow),
-              box-shadow var(--transition-slow);
+    background-color var(--transition-slow),
+    box-shadow var(--transition-slow);
 }
 
 /* Slide fully out of view when user scrolls DOWN */
@@ -383,9 +412,11 @@ input, textarea, select {
 .hamburger[aria-expanded="true"] span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
+
 .hamburger[aria-expanded="true"] span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger[aria-expanded="true"] span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
@@ -406,7 +437,8 @@ input, textarea, select {
 */
 .hero {
   position: relative;
-  height: calc(100vh + 150px); /* matches shrinkOver in main.js */
+  height: calc(100vh + 150px);
+  /* matches shrinkOver in main.js */
   /* White shows as the surrounding "border" when box shrinks */
   background-color: var(--color-bg);
 }
@@ -448,12 +480,10 @@ input, textarea, select {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    160deg,
-    hsla(215, 60%, 8%, 0.82) 0%,
-    hsla(215, 50%, 12%, 0.55) 55%,
-    hsla(215, 40%, 16%, 0.32) 100%
-  );
+  background: linear-gradient(160deg,
+      hsla(215, 60%, 8%, 0.82) 0%,
+      hsla(215, 50%, 12%, 0.55) 55%,
+      hsla(215, 40%, 16%, 0.32) 100%);
 }
 
 /* Text: pinned to the bottom-left corner of the shrink box */
@@ -476,7 +506,8 @@ input, textarea, select {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: var(--space-1); /* consistent 8px gap to heading below */
+  margin-bottom: var(--space-1);
+  /* consistent 8px gap to heading below */
 }
 
 /* Hero variant of eyebrow (light coloured for dark bg) */
@@ -553,8 +584,15 @@ input, textarea, select {
   }
 
   @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50%       { transform: translateY(6px); }
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(6px);
+    }
   }
 }
 
@@ -611,8 +649,8 @@ input, textarea, select {
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   transition: border-color var(--transition-base),
-              box-shadow var(--transition-base),
-              transform var(--transition-base);
+    box-shadow var(--transition-base),
+    transform var(--transition-base);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -652,7 +690,8 @@ input, textarea, select {
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   line-height: 1.65;
-  flex: 1; /* push CTA to bottom */
+  flex: 1;
+  /* push CTA to bottom */
 }
 
 /* Clickable link wrapper inside each card */
@@ -863,7 +902,8 @@ input, textarea, select {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: var(--space-6);
-  align-items: stretch; /* both columns share same height */
+  align-items: stretch;
+  /* both columns share same height */
 }
 
 /* Left column stacks info on top, map fills the rest */
@@ -887,7 +927,8 @@ input, textarea, select {
 
 .contact-link {
   display: flex;
-  align-items: center; /* vertically centre text with the icon */
+  align-items: center;
+  /* vertically centre text with the icon */
   gap: var(--space-2);
   font-size: var(--font-size-base);
   color: var(--color-text);
@@ -918,7 +959,8 @@ input, textarea, select {
 }
 
 .contact-link--address {
-  align-items: flex-start; /* address wraps so keep top-aligned */
+  align-items: flex-start;
+  /* address wraps so keep top-aligned */
   color: var(--color-text);
 }
 
@@ -931,7 +973,8 @@ input, textarea, select {
 
 /* Google Maps embed – fills remaining height in left column */
 .contact-map {
-  flex: 1;              /* grow to fill space left by contact-info */
+  flex: 1;
+  /* grow to fill space left by contact-info */
   margin-top: var(--space-5);
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -1122,11 +1165,25 @@ input, textarea, select {
     transform: translateY(0);
   }
 
-  .reveal-delay-1 { transition-delay: 100ms; }
-  .reveal-delay-2 { transition-delay: 200ms; }
-  .reveal-delay-3 { transition-delay: 300ms; }
-  .reveal-delay-4 { transition-delay: 400ms; }
-  .reveal-delay-5 { transition-delay: 500ms; }
+  .reveal-delay-1 {
+    transition-delay: 100ms;
+  }
+
+  .reveal-delay-2 {
+    transition-delay: 200ms;
+  }
+
+  .reveal-delay-3 {
+    transition-delay: 300ms;
+  }
+
+  .reveal-delay-4 {
+    transition-delay: 400ms;
+  }
+
+  .reveal-delay-5 {
+    transition-delay: 500ms;
+  }
 }
 
 /* ============================================================
@@ -1218,6 +1275,56 @@ input, textarea, select {
     margin-left: auto;
   }
 
+  /* --- Mobile Hero Layout --- */
+  .hero {
+    height: auto !important;
+    min-height: auto !important;
+    background-color: transparent !important;
+    margin-bottom: var(--space-4) !important;
+  }
+
+  .hero-sticky {
+    height: auto !important;
+    position: static !important;
+  }
+
+  .hero-shrink-box {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    padding: calc(var(--header-height) + var(--space-5)) var(--space-4) var(--space-6) var(--space-4) !important;
+    background-color: hsl(210, 50%, 18%) !important;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px) !important;
+    background-size: 16px 16px !important;
+  }
+
+  .hero-video {
+    display: none !important;
+  }
+
+  .hero-overlay {
+    display: none !important;
+  }
+
+  .hero-content {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    margin: 0 !important;
+    z-index: 2 !important;
+  }
+
+  .hero-scroll {
+    display: none !important;
+  }
+
   .hero-title {
     font-size: clamp(var(--font-size-2xl), 10vw, var(--font-size-3xl));
   }
@@ -1230,6 +1337,8 @@ input, textarea, select {
     width: 100%;
     justify-content: center;
   }
+
+  /* -------------------------- */
 
   .form-row {
     grid-template-columns: 1fr;

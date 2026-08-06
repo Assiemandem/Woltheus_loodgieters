@@ -34,6 +34,7 @@ function updateNavOnScroll(currentY) {
 
 function updateHeroShrink(currentY) {
   if (!heroShrinkBox) return;
+  if (window.innerWidth <= 640) return;
 
   const maxPad    = 80;   // px – same as --header-height nav bar
   const shrinkOver = 150; // scroll distance to complete the effect
