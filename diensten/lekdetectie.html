@@ -48,222 +48,6 @@
 
   <link rel="stylesheet" href="../style.css" />
 
-  <style>
-    /* Simple hero */
-    .page-hero {
-      background: linear-gradient(160deg, hsl(215, 60%, 8%) 0%, hsl(215, 35%, 18%) 100%);
-      min-height: 60vh;
-      display: flex;
-      align-items: flex-end;
-      padding-bottom: 80px;
-      padding-top: var(--header-height);
-      position: relative;
-    }
-
-    .page-hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 70% 50%, hsla(198, 72%, 44%, 0.12) 0%, transparent 65%);
-      pointer-events: none;
-    }
-
-    .page-hero-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .page-hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-2);
-      font-size: var(--font-size-sm);
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: hsl(198, 72%, 72%);
-      margin-bottom: var(--space-4);
-    }
-
-    .page-hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 32px;
-      height: 2px;
-      background-color: hsl(198, 72%, 60%);
-      border-radius: var(--radius-full);
-    }
-
-    .page-hero-title {
-      font-size: clamp(var(--font-size-3xl), 6vw, var(--font-size-5xl));
-      font-weight: 700;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
-      color: var(--color-text-on-dark);
-      margin-bottom: var(--space-4);
-    }
-
-    .page-hero-sub {
-      font-size: clamp(var(--font-size-base), 2vw, var(--font-size-lg));
-      color: rgba(255, 255, 255, 0.72);
-      max-width: 560px;
-      line-height: 1.65;
-    }
-
-    /* Header fix for service pages */
-    .site-header {
-      background-color: var(--color-bg-dark);
-    }
-
-    /* Detail content */
-    .service-detail {
-      padding-block: var(--space-12);
-    }
-
-    .service-detail-grid {
-      display: grid;
-      grid-template-columns: 1fr 360px;
-      gap: var(--space-12);
-      align-items: start;
-    }
-
-    .service-detail-body h2 {
-      font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-3xl));
-      margin-bottom: var(--space-3);
-    }
-
-    .service-intro {
-      font-size: var(--font-size-md);
-      color: var(--color-text-muted);
-      line-height: 1.75;
-      margin-bottom: var(--space-6);
-    }
-
-    .service-detail-body p {
-      font-size: var(--font-size-base);
-      color: var(--color-text-muted);
-      line-height: 1.75;
-      margin-bottom: var(--space-4);
-    }
-
-    .service-feature-list {
-      list-style: none;
-      margin: var(--space-6) 0;
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-2);
-    }
-
-    .service-feature-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-2);
-      font-size: var(--font-size-base);
-      color: var(--color-text);
-    }
-
-    .service-feature-list li svg {
-      flex-shrink: 0;
-      margin-top: 3px;
-      color: var(--color-accent);
-    }
-
-    /* Sidebar */
-    .service-sidebar-card {
-      background-color: var(--color-bg-dark);
-      border-radius: var(--radius-lg);
-      padding: var(--space-6);
-      color: var(--color-text-on-dark);
-      position: sticky;
-      top: calc(var(--header-height) + var(--space-4));
-    }
-
-    .service-sidebar-card h3 {
-      font-size: var(--font-size-lg);
-      margin-bottom: var(--space-2);
-      color: var(--color-text-on-dark);
-    }
-
-    .service-sidebar-card p {
-      font-size: var(--font-size-sm);
-      color: var(--color-text-light);
-      line-height: 1.65;
-      margin-bottom: var(--space-5);
-    }
-
-    .service-sidebar-card .btn {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-
-    .sidebar-contact-list {
-      margin-top: var(--space-5);
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-2);
-      border-top: 1px solid var(--color-border-dark);
-      padding-top: var(--space-4);
-    }
-
-    .sidebar-contact-list li {
-      display: flex;
-      align-items: center;
-      gap: var(--space-2);
-      font-size: var(--font-size-sm);
-      color: var(--color-text-light);
-    }
-
-    .sidebar-contact-list li a {
-      color: hsl(198, 72%, 65%);
-      transition: color var(--transition-fast);
-    }
-
-    .sidebar-contact-list li a:hover {
-      color: var(--color-text-on-dark);
-    }
-
-    /* CTA */
-    .service-cta {
-      background: linear-gradient(135deg, var(--color-brand) 0%, hsl(210, 65%, 20%) 100%);
-      padding-block: var(--space-12);
-      text-align: center;
-      color: var(--color-text-on-dark);
-    }
-
-    .service-cta h2 {
-      font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-3xl));
-      margin-bottom: var(--space-3);
-      color: var(--color-text-on-dark);
-    }
-
-    .service-cta p {
-      font-size: var(--font-size-md);
-      color: rgba(255, 255, 255, 0.78);
-      max-width: 560px;
-      margin-inline: auto;
-      margin-bottom: var(--space-6);
-      line-height: 1.65;
-    }
-
-    .service-cta-actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: var(--space-3);
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .service-detail-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .service-sidebar-card {
-        position: static;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -278,7 +62,8 @@
           <li class="nav-item-dropdown">
             <a href="../index.html#diensten" class="nav-link-diensten">
               Diensten
-              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </a>
@@ -459,7 +244,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="../index.html" aria-label="Woltheus Loodgieters – homepage">
-            <img src="../images/Woltheus - Logo 2026.svg" alt="Woltheus Loodgieters" width="140" height="42" loading="lazy" />
+            <img src="../images/Woltheus - Logo 2026.svg" alt="Woltheus Loodgieters" width="140" height="42"
+              loading="lazy" />
           </a>
           <p class="footer-tagline">Allround installateur in de Zaanstreek. Al meer dan 35 jaar uw betrouwbare
             loodgieter.</p>
