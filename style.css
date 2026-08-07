@@ -228,6 +228,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -1054,6 +1055,7 @@ select {
   color: var(--color-text);
   transition: color var(--transition-fast);
   font-style: normal;
+  overflow-wrap: anywhere;
 }
 
 .contact-link:hover {
